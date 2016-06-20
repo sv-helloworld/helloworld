@@ -1,0 +1,29 @@
+{
+  "name": "sv-helloworld",
+  "homepage": "https://svhelloworld.nl",
+  "description": "Het thema van Studievereniging \"Hello World\".",
+  "main": "",
+  "keywords": [
+    "sv",
+    "studievereniging",
+    "hello",
+    "world"
+  ],
+  "authors": [
+    "Raymon de Looff <raydelooff@gmail.com>",
+    "Thijs Clowting <thijs@clowting.me>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "jquery": "1.9.1 - 2"
+  }
+}
