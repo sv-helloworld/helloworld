@@ -45,6 +45,7 @@ function helloworld_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'helloworld' ),
+		'top-bar' => esc_html__( 'Top Bar', 'helloworld' ),
 	) );
 
 	/*
@@ -138,3 +139,8 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Custom navigation walker
+ */
+require get_template_directory() . '/wp_bootstrap_navwalker.php';

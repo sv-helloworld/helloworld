@@ -10,17 +10,23 @@
  */
 
 ?>
+				</div>
+			</div>
+		</div>
+	</section><!-- / Content -->
 
-	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'helloworld' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'helloworld' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'helloworld' ), 'helloworld', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+	<footer id="footer" class="site-footer" role="contentinfo">
+		<div class="container-fluid">
+			<div class="container-inner">
+				<div class="site-info">
+					<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'helloworld' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'helloworld' ), 'WordPress' ); ?></a>
+					<span class="sep"> | </span>
+					<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'helloworld' ), '"Hello World"', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+				</div>
+			</div>
+		</div>
+	</footer><!-- / Footer -->
+</div><!-- / Page -->
 
 <?php wp_footer(); ?>
 
