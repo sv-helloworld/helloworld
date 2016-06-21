@@ -1,0 +1,78 @@
+// Navbar
+.navbar-brand {
+	h1, span {
+		background-image: url('./images/logo.png');
+	}
+
+	h1 {
+		margin: 0;
+	}
+}
+
+// Breakpoints
+// HiDPI screens
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+
+	.navbar-brand {
+		h1, span {
+			background-image: url('./images/logo@2x.png');
+		}
+	}
+
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : $screen-xs) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : $screen-sm) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : $screen-md) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : $screen-lg) {
+
+}
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : $screen-lg - 1) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : $screen-md - 1) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : $screen-sm - 1) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : $screen-xs - 1) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
