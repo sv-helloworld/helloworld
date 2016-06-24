@@ -1,5 +1,5 @@
 // Top bar
-div#topbar {
+div#top-bar {
 	background: $blue-color;
 	font-size: 0.8em;
 	font-weight: 700;
@@ -63,13 +63,10 @@ div#topbar {
 	div.navigation {
 		> ul {
 			margin: 0;
-			padding: 10px 0;
+			padding: 0;
 
 			> li {
-				line-height: 1;
-				margin-left: 10px;
-				padding-left: 10px;
-				border-left: 1px solid $blue-light-color;
+				padding: 0 10px;
 				display: inline-block;
 
 				&:first-child {
@@ -78,8 +75,15 @@ div#topbar {
 					border-left: none;
 				}
 
+				&:last-child {
+					padding-right: 0;
+				}
+
 				> a {
 					color: #FFF;
+					line-height: 50px;
+					height: 50px;
+					display: block;
 
 					&:hover, &:active, &:focus {
 						color: rgba(255, 255, 255, .7);
@@ -90,34 +94,46 @@ div#topbar {
 	}
 
 	// Breakpoints
-	/*==========  Mobile First Method  ==========*/
+	/*==========  Non-Mobile First Method  ==========*/
 
-	/* Custom, iPhone Retina */
-	@media only screen and (min-width : 320px) {
+	/* Large Devices, Wide Screens */
+	@media only screen and (max-width : $screen-lg) {
 
-		.date {
+	}
+
+	/* Medium Devices, Desktops */
+	@media only screen and (max-width : $screen-md) {
+
+	}
+
+	/* Small Devices, Tablets */
+	@media only screen and (max-width : $screen-sm) {
+
+	}
+
+	/* Extra Small Devices, Phones */
+	@media only screen and (max-width : $screen-xs) {
+
+		.top-bar-section {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		.top-bar-section-social {
+			display: none;
+		}
+
+		.top-bar-section-navigation {
+			padding: 0;
+			text-align: center;
+			border-left: 0;
 			display: block;
 		}
 
 	}
 
-	/* Extra Small Devices, Phones */
-	@media only screen and (min-width : $screen-xs - 1) {
-
-	}
-
-	/* Small Devices, Tablets */
-	@media only screen and (min-width : $screen-sm - 1) {
-
-	}
-
-	/* Medium Devices, Desktops */
-	@media only screen and (min-width : $screen-md - 1) {
-
-	}
-
-	/* Large Devices, Wide Screens */
-	@media only screen and (min-width : $screen-lg - 1) {
+	/* Custom, iPhone Retina */
+	@media only screen and (max-width : 320px) {
 
 	}
 }

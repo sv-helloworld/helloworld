@@ -31,10 +31,10 @@
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'helloworld' ); ?></a>
 
 	<!-- Top bar -->
-    <div id="topbar">
+    <div id="top-bar">
         <div class="container-fluid">
             <div class="container-inner">
-                <div class="top-bar-section">
+                <div class="top-bar-section top-bar-section-social">
                     <ul class="social">
                         <li>
                             <a href="https://www.facebook.com/svhelloworld/" target="_blank">
@@ -43,7 +43,7 @@
                         </li>
                     </ul>
                 </div><!--
-                --><div class="top-bar-section">
+                --><div class="top-bar-section top-bar-section-navigation">
                     <?php wp_nav_menu( array( 'theme_location' => 'top-bar', 'container_class' => 'navigation', 'menu_id' => 'top-bar-menu' ) ); ?>
                 </div>
             </div>

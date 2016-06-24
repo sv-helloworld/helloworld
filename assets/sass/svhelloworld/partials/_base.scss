@@ -66,7 +66,7 @@ section {
 
 // Navbar
 .navbar {
-	font-size: 0.8em;
+	font-size: 0.9em;
 	border: none;
 }
 
@@ -74,14 +74,6 @@ section {
 	.navbar-toggle {
 		background: rgba(255, 255, 255, .7);
 		transition: all .2s linear;
-	}
-
-	.navbar-nav {
-		> li {
-			> a {
-				text-transform: uppercase;
-			}
-		}
 	}
 }
 
@@ -106,6 +98,41 @@ section {
 		height: 50px;
 		text-indent: -9999px;
 		display: block;
+	}
+}
+
+.dropdown {
+	.navbar-toggle {
+		background: transparent;
+		border-color: transparent;
+
+		&:hover, &:active, &:focus {
+			background: transparent;
+			border-color: transparent;
+		}
+	}
+}
+
+.dropdown-menu {
+	padding: 0;
+	border: none;
+	overflow: hidden;
+
+	> li {
+		> a  {
+			font-size: 0.8em;
+			text-transform: uppercase;
+			padding: 10px 45px 10px 20px;
+			position: relative;
+		}
+
+		&:not(.dropdown-header):not(.divider) {
+			border-top: 1px solid #FFF;
+
+			&:first-child {
+				border-top: none;
+			}
+		}
 	}
 }
 
