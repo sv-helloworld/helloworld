@@ -34,7 +34,18 @@
     <div id="topbar">
         <div class="container-fluid">
             <div class="container-inner">
-                <?php wp_nav_menu( array( 'theme_location' => 'top-bar', 'container_class' => 'navigation', 'menu_id' => 'top-bar-menu' ) ); ?>
+                <div class="top-bar-section">
+                    <ul class="social">
+                        <li>
+                            <a href="https://www.facebook.com/svhelloworld/" target="_blank">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--
+                --><div class="top-bar-section">
+                    <?php wp_nav_menu( array( 'theme_location' => 'top-bar', 'container_class' => 'navigation', 'menu_id' => 'top-bar-menu' ) ); ?>
+                </div>
             </div>
         </div>
     </div>
@@ -80,22 +91,11 @@
 
         <!-- Banners -->
         <div id="banners">
-            @foreach ($banners as $banner)
             <div class="banner">
                 <div class="banner-inner">
-                    <div class="banner-photo" data-115-start="transform: translate(0px, 0px);" data--715-top="transform: translate(0%, 120%);" style="background-image: url('{{ banner.image }}');"></div>
-
-                    <div class="banner-heading">
-                        <div class="container">
-                            <div class="banner-heading-inner">
-                                <span class="banner-type-label banner-type-label-{{ banner.type }}">{{ banner.type | capitalize }}</span>
-                                <h2>{{ banner.title }}</h2>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="banner-photo" data-115-start="transform: translate(0px, 0px);" data--715-top="transform: translate(0%, 120%);" style="background-image: url('<?php echo( get_header_image() ); ?>');"></div>
                 </div>
             </div>
-            @endforeach
 
             <div id="banner-slider-pager" class="item-slider-pager">
                 <div class="item-slider-pager-inner"></div>

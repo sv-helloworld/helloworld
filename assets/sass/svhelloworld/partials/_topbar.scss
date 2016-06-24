@@ -4,23 +4,66 @@ div#topbar {
 	font-size: 0.8em;
 	font-weight: 700;
 	color: #FFF;
+	text-align: right;
 	text-transform: uppercase;
 
 	.container-fluid {
 		.container-inner {
-			padding: 10px 0;
+			padding: 0;
 		}
 	}
 
-	.date {
-		display: none;
+	.top-bar-section {
+		line-height: 30px;
+		padding: 0 20px;
+		border-left: 1px solid rgba(255, 255, 255, .3);
+		display: inline-block;
+
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+
+	ul.social {
+		margin: 0;
+		padding: 10px 0;
+		list-style: none;
+
+		li {
+			margin-right: 5px;
+			display: inline-block;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			> a {
+				background: #FFF;
+				font-size: 17px;
+				color: $primary-color;
+				line-height: 24px;
+				width: 30px;
+				padding: 3px;
+				text-align: center;
+				display: block;
+				transition: all .2s linear;
+				border-radius: 15px;
+
+				&:hover, &:active, &:focus {
+					background: rgba(255, 255, 255, .8);
+				}
+
+				> i {
+					margin: 0;
+				}
+			}
+		}
 	}
 
 	div.navigation {
 		> ul {
-			text-align: right;
 			margin: 0;
-			padding: 0;
+			padding: 10px 0;
 
 			> li {
 				line-height: 1;
@@ -59,22 +102,22 @@ div#topbar {
 	}
 
 	/* Extra Small Devices, Phones */
-	@media only screen and (min-width : $screen-xs) {
+	@media only screen and (min-width : $screen-xs - 1) {
 
 	}
 
 	/* Small Devices, Tablets */
-	@media only screen and (min-width : $screen-sm) {
+	@media only screen and (min-width : $screen-sm - 1) {
 
 	}
 
 	/* Medium Devices, Desktops */
-	@media only screen and (min-width : $screen-md) {
+	@media only screen and (min-width : $screen-md - 1) {
 
 	}
 
 	/* Large Devices, Wide Screens */
-	@media only screen and (min-width : $screen-lg) {
+	@media only screen and (min-width : $screen-lg - 1) {
 
 	}
 }

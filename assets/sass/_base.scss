@@ -1,3 +1,27 @@
+// Core variables and mixins
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+// Import Bootstrap forms
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/forms";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
+
+// Anchors
+a[class$="link"] {
+	@extend .btn;
+	@extend .btn-primary;
+	@extend .btn-xs;
+}
+
+// Articles
+article {
+	& + article {
+		margin-top: 20px;
+		padding-top: 20px;
+		border-top: 1px solid $gray-lightest-color;
+	}
+}
+
 // Navbar
 .navbar-brand {
 	h1, span {
@@ -7,6 +31,144 @@
 	h1 {
 		margin: 0;
 	}
+}
+
+// Page headers
+.page-header {
+	margin-top: 0;
+}
+
+// Search
+.search-form {
+	label {
+		margin-bottom: 0;
+	}
+
+	.search-field {
+		@extend .form-control;
+	}
+
+	.search-submit {
+		@extend .btn;
+		@extend .btn-primary;
+		vertical-align: top;
+	}
+}
+
+// Entry
+.entry-header {
+	.entry-title {
+		margin-bottom: 10px;
+	}
+
+	.entry-meta {
+		font-size: 0.9em;
+	}
+}
+
+.entry-content {
+	img {
+		background: #FFF;
+		max-width: 100%;
+		height: auto;
+		padding: 3px;
+		border: 1px solid $gray-lightest-color;
+	}
+}
+
+.entry-footer {
+	margin-top: 10px;
+
+	span {
+		& + span {
+			margin-left: 10px;
+		}
+	}
+}
+
+// Comments
+.comments-area {
+	margin-top: 30px;
+	padding-top: 30px;
+	border-top: 1px solid $gray-lighter-color;
+}
+
+.comment-list {
+	margin-top: 20px;
+	padding-left: 15px;
+	list-style: none;
+
+	> li {
+		& + li {
+			margin-top: 10px;
+			padding-top: 10px;
+			border-top: 1px solid $gray-lightest-color;
+		}
+	}
+
+	.comment-content {
+		font-size: 0.95em;
+		color: lighten($text-color, 7%);
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.reply {
+		margin-top: 10px;
+	}
+}
+
+.comment-meta {
+	.comment-metadata {
+		font-size: 0.9em;
+		margin-top: 10px;
+		display: inline-block;
+
+		.edit-link {
+			margin-left: 5px;
+		}
+	}
+
+	.comment-author.vcard {
+		img {
+			margin-right: 5px;
+		}
+	}
+}
+
+.comment-respond {
+	margin-top: 40px;
+
+	.comment-reply-title {
+		margin-bottom: 10px;
+	}
+
+	#cancel-comment-reply-link {
+		font-size: 0.9em;
+		margin-left: 5px;
+	}
+
+	.logged-in-as {
+		font-size: 0.9em;
+		margin-bottom: 10px;
+	}
+}
+
+.comment-form {
+	.comment-form-comment {
+		label {
+			display: block;
+		}
+
+		textarea {
+			@extend .form-control;
+		}
+	}
+}
+
+.submit {
+	@extend .btn;
+	@extend .btn-primary;
 }
 
 // Breakpoints
