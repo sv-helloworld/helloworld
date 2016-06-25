@@ -8415,7 +8415,6 @@ ol:last-child {
 
 .dropdown-menu>li>a {
   font-size: 0.8em;
-  text-transform: uppercase;
   padding: 10px 45px 10px 20px;
   position: relative;
 }
@@ -8589,9 +8588,10 @@ a[class$="link"],
 }
 
 .widget {
-  border: 1px solid #F3F3F3;
+  background: #F3F3F3;
 }
 
+.widget .widgettitle,
 .widget .widget-title {
   font-size: 1.2em;
   background: #1071B9;
@@ -10269,6 +10269,7 @@ article+article {
 
 .entry-header .entry-meta {
   font-size: 0.9em;
+  color: gray;
 }
 
 .entry-content img {
@@ -10331,7 +10332,7 @@ article+article {
 }
 
 .comment-respond {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .comment-respond .comment-reply-title {
@@ -10345,7 +10346,7 @@ article+article {
 
 .comment-respond .logged-in-as {
   font-size: 0.9em;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .comment-form .comment-form-comment label {

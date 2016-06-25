@@ -63,6 +63,7 @@ article {
 
 	.entry-meta {
 		font-size: 0.9em;
+		color: lighten($text-color, 30%);
 	}
 }
 
@@ -137,7 +138,7 @@ article {
 }
 
 .comment-respond {
-	margin-top: 40px;
+	margin-top: 20px;
 
 	.comment-reply-title {
 		margin-bottom: 10px;
@@ -150,7 +151,7 @@ article {
 
 	.logged-in-as {
 		font-size: 0.9em;
-		margin-bottom: 10px;
+		margin-bottom: 15px;
 	}
 }
 

@@ -1,8 +1,8 @@
 // Widget
 .widget {
-	border: 1px solid $gray-lightest-color;
+	background: $gray-lightest-color;
 
-	.widget-title {
+	.widgettitle, .widget-title {
 		font-size: 1.2em;
 		background: $primary-color;
 		color: #FFF;
