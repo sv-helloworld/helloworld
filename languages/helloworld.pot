@@ -107,14 +107,14 @@ msgstr ""
 #, php-format
 #@ _s
 msgctxt "post date"
-msgid "Posted on %s"
+msgid "Geplaatst op %s"
 msgstr ""
 
 #: inc/template-tags.php:33
 #, php-format
 #@ _s
 msgctxt "post author"
-msgid "by %s"
+msgid "door %s"
 msgstr ""
 
 #. translators: used between list items, there is a space after the comma
@@ -196,7 +196,7 @@ msgstr ""
 #: template-parts/content.php:33
 #, php-format
 #@ _s
-msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgid "Lees meer %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
 #. Theme Name of the plugin/theme
