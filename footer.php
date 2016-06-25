@@ -24,9 +24,7 @@
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 md-text-right lg-text-right">
 						<div class="site-info">
-							<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'helloworld' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'helloworld' ), 'WordPress' ); ?></a>
-							<span class="sep"> | </span>
-							<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'helloworld' ), '"Hello World"', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+							<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'helloworld' ) ); ?>" target="_blank"><?php printf( esc_html__( 'Proudly powered by %s', 'helloworld' ), 'WordPress' ); ?></a>
 						</div>
 					</div>
 				</div>
