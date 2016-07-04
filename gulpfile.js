@@ -41,15 +41,7 @@ gulp.task('sass', function() {
 
 gulp.task('css', ['sass'], function() {
     return gulp.src(stylesheets)
-        .pipe(concatCss('style.css'))
-        .pipe(gulp.dest('.'))
-        .pipe(livereload());
-});
-
-gulp.task('minify_css', ['sass'], function() {
-    return gulp.src(stylesheets)
-        .pipe(concatCss('style.css'))
-        .pipe(cssnano())
+        .pipe(concat('style.css'))
         .pipe(gulp.dest('.'))
         .pipe(livereload());
 });
