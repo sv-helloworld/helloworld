@@ -36,6 +36,11 @@
             <div class="container-inner">
                 <div class="top-bar-section top-bar-section-social">
                     <ul class="social">
+						<li>
+                            <a href="https://github.com/sv-helloworld/mijn-sv-helloworld" target="_blank">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        </li>
                         <li>
                             <a href="https://www.facebook.com/svhelloworld/" target="_blank">
                                 <i class="fa fa-facebook"></i>
