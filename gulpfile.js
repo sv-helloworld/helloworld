@@ -1,14 +1,10 @@
-"use strict";
-
 var gulp = require('gulp'),
-        gutil = require('gulp-util'),
-        sass = require('gulp-sass'),
-        autoprefixer = require('gulp-autoprefixer'),
-        livereload = require('gulp-livereload'),
-        uglify = require('gulp-uglify'),
-        concat = require('gulp-concat'),
-        concatCss = require('gulp-concat-css'),
-        cssnano = require('gulp-cssnano');
+    gutil = require('gulp-util'),
+    sass = require('gulp-sass'),
+    autoprefixer = require('gulp-autoprefixer'),
+    livereload = require('gulp-livereload'),
+    uglify = require('gulp-uglify'),
+    concat = require('gulp-concat');
 
 var stylesheets = [
     'assets/css/template.css',
@@ -83,6 +79,6 @@ gulp.task('watch', function() {
     gulp.watch('assets/js/*.js', ['scripts_app']);
 });
 
-gulp.task('vendor', ['scripts_vendor'])
+gulp.task('vendor', ['scripts_vendor']);
 
 gulp.task('default', ['watch']);
